@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="code.js" defer></script>
+    <script src="https://kit.fontawesome.com/6fc01c59a6.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+     <div class="container">
+        <header>
+            <button class="backbtn btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <p>Now Playing</p>
+            
+            <button class="bars btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+
+        <div class="central">
+                    <img src="./images/bg2.jpg">
+                    <h2 class="songName">The Search</h2>
+                    <p class="artist"><em class="artistName">NF</em></p>
+
+                    <audio src="./songs/mortals.mp3" id="audioTrack"></audio>
+
+                        <input type="range" value="0">
+                        <div class="timer">
+                            <span class="startTime">0:00</span>
+                            <span class="maxDuration">4:23</span>
+                        </div>
+                  
+                     
+              <div class="controls">
+                <i class="material-icons repeat">repeat</i>
+                <button class="btnControls back"><i class="fa-solid fa-backward"></i></button>
+                <button class="btnControls play"><i class="fa-solid fa-play"></i></button>
+                <button class="btnControls next"><i class="fa-solid fa-forward"></i></button>
+                <i class="material-icons moreSongs">queue_music</i>
+              </div>
+
+              <div class="musicList">
+                    <div class="headline">
+                        <div class="left">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Music List</span>
+                        </div>
+                        <i class="fa-solid fa-xmark cross"></i>
+                    </div>
+
+                    <ul class="queue">
+                        <!-- <li>
+                            <div class="musicName">
+                                <span>Fairytale</span>
+                                <p>Alexander Rybak</p>
+                            </div>
+                            <div class="time">4:23</div>
+                        </li> -->
+                    </ul>
+              </div>
+        </div>
+    </div>
+</body>
+</html>
